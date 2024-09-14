@@ -1,0 +1,89 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2890182417124514821
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6939031444767398408}
+  - component: {fileID: 7611227927442084668}
+  - component: {fileID: 6114335043880360922}
+  - component: {fileID: 2729448479480347485}
+  m_Layer: 0
+  m_Name: Maze
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6939031444767398408
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2890182417124514821}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7611227927442084668
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2890182417124514821}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33bbdb95ccc4b4577a62495732a02d3e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  wallPrefab: {fileID: 7019759474461819609, guid: f4b4f76af4f705144b7495c194a1108c, type: 3}
+  size: 30
+  width: 30
+  depth: 30
+  scale: 5
+--- !u!114 &6114335043880360922
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2890182417124514821}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c06fd7924b2aa24a9eae9b890e5d7d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maze: {fileID: 7611227927442084668}
+  surface: {fileID: 1289656798058062964, guid: 01a62dd94f57e3349a15cf5b650adb0c, type: 3}
+  navSurface: {fileID: 0}
+--- !u!114 &2729448479480347485
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2890182417124514821}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f844283ef50fbe04ab47e92bba2d851c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawn: {fileID: 6114335043880360922}
+  playerPrefab: {fileID: 2355121769615897842, guid: 2eab058a9493e2547a8e7de138b1466a, type: 3}
+  enemyPrefab: {fileID: 2355121769615897842, guid: d2c42a1733116b8419b74027242211b8, type: 3}
+  diamondPrefabs:
+  - {fileID: 769483068521819081, guid: 65f2cf106a71fa84dbe69c373850d6a3, type: 3}
+  - {fileID: 769483068521819081, guid: 7b133eb34e33d48498ec167a0cf7328f, type: 3}
+  pickupPrefabs:
+  - {fileID: 8504633102984481803, guid: bb910cacd7e33de4f9187c1b5dc9461f, type: 3}
+  time: 120
